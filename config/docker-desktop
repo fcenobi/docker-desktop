@@ -2,7 +2,7 @@
 
 #Default screen resolution 800x600
 if [ ! -f ~/.Xscreen ]; then
-	SCREEN_SIZE="800x600"
+	SCREEN_SIZE="1380x768"
 else
    	SCREEN_SIZE=$(head -n 1 ~/.Xscreen)
 fi
@@ -35,7 +35,7 @@ while getopts ":s:d:h-:" opt; do
     h)
       echo -e "\n-----------------------------------------------------------"
       echo -e "Usage: docker-desktop [-s screen_size] [-d session_number]"
-      echo -e "-s : screen resolution (Default = 800x600" 
+      echo -e "-s : screen resolution (Default = 1380x768" 
       echo -e "-d : session number (Default = 10)"
       echo -e "-h : help"
       echo -e "-----------------------------------------------------------\n"
